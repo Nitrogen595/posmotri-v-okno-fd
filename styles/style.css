@@ -83,7 +83,6 @@ ol {
 
 .result__video-container {
   position: relative;
-  margin-bottom: 16px;
 }
 
 .result__video {
@@ -238,13 +237,12 @@ ol {
   flex-direction: column;
   grid-area: content__details;
   align-content: end;
-  gap: 23px;
+  gap: 20px;
   width: 100%;
   height: 100%;
 }
 
 .title {
-  padding-top: 6px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
