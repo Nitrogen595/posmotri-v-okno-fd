@@ -10,6 +10,8 @@ html {
 
 .page {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -64,13 +66,12 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  grid-template-rows: 534px;
   grid-template-areas: "result content__details";
   justify-content: center;
+  align-items: end;
   align-items: center;
   column-gap: 30px;
   width: 1140px;
-  margin: 130px 30px;
 }
 
 .result {
@@ -95,7 +96,6 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  min-height: 54px;
 }
 
 .search-form__fieldset {
@@ -107,14 +107,19 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-  margin-top: 5px;
 }
 
 .search-form__label {
   display: flex;
+  align-items: start;
   width: fit-content;
-  height: 20px;
   cursor: pointer;
+}
+
+.search-form__label:has(.search-form__textfield) {
+  width: 225px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .search-form__label:focus {
@@ -138,13 +143,13 @@ ol {
 }
 
 .search-form__textfield {
-  min-height: 27px;
+  width: 221px;
   border: none;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  color: inherit;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 1;
   background-color: transparent;
   appearance: none;
 }
@@ -160,10 +165,9 @@ ol {
 }
 
 .search-form__fieldset-title {
-  min-height: 22px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1;
+  line-height: 2;
 }
 
 .search-form__pseudo-checkbox {
@@ -180,8 +184,8 @@ ol {
   top: 1px;
   left: 1px;
   display: none;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   background-color: #ffffff;
 }
 
@@ -194,6 +198,7 @@ ol {
   border: 1px solid #ffffff;
   padding: 6px;
   color: #ffffff;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 1;
@@ -224,7 +229,8 @@ ol {
 }
 
 .more-button {
-  width: 100%;
+  width: 390px;
+  margin: 30px 3px 0 0;
 }
 
 .content__details {
@@ -242,7 +248,7 @@ ol {
   font-family: Oswald;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 0.94;
   text-transform: uppercase;
 }
 
@@ -266,7 +272,7 @@ ol {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding: 0 3px 0 3px;
+  padding: 0 3px;
 }
 
 .content__card-link {
